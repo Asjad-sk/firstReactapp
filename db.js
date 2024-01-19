@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 const connectdb = async () => {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/todos");
+        await mongoose.connect("mongodb+srv://asjadsk:password1234567@cluster0.bkqliu4.mongodb.net/test?retryWrites=true&w=majority");
         console.log(`MongoDB connected`);
     } catch (err) {
         console.error(err.message);
